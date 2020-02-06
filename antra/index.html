@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Feedbacks</title>
+	<link rel="stylesheet" href="./index.css" type="text/css"/>
+</head>
+<body>
+<div class="container">
+			<form>
+			<h1>Give feedback</h1>
+			<hr>
+				<label for="name"><b>First name</b></label>
+				<input type="textClass" type="text" name="name" placeholder="Enter your first name" required><br>
+				
+				<label for="email"><b>Email</b></label>
+				<input class="textClass" type="text" name="email" placeholder="Enter your email" required><br>
+				
+				<p><b>Date</b> <span id="datetime"></span></p>
+
+				<script>
+				var dt = new Date();
+				document.getElementById("datetime").innerHTML = dt.toLocaleString();
+				</script>
+				
+				<label for="feedback"><b>Feedback</b></label>
+				<textarea class="textClass" type="text" name="feedback" placeholder="Enter your feedback" rows="6" required></textarea><br>				
+			</hr>
+			<button type="Submit" class="submit">Send</button>
+</div>
+</form>
+</body>
+</html>
